@@ -21,12 +21,14 @@ body{
 }
 
 header{
-    font-size: 450%;
-    text-align: center;
+    width: 100vw;
+    font-size: 130%;
     color: var(--cor2);
     background-color: var(--cor1);
-    padding: 8px;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 main{
     margin: auto;
