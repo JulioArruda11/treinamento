@@ -1,0 +1,84 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+:root{
+    --cor0: white;
+    --cor1: black;
+    --cor2: rgb(0, 255, 30); 
+    --cor3: tomato;
+    --cor4: rgb(139, 139, 139);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Madimi One", sans-serif;
+}
+
+body{
+    width: 100%;
+    background-color: var(--cor4);
+}
+
+header{
+    font-size: 450%;
+    text-align: center;
+    color: var(--cor2);
+    background-color: var(--cor1);
+    padding: 8px;
+    margin-bottom: 20px;
+}
+main{
+    margin: auto;
+    min-width: 200px;
+    max-width: 600px;
+    min-height: 400px;
+    max-height: 800px;
+    background-color: var(--cor3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    border-radius: 15px;
+}
+.botoes{
+    display: flex;
+    padding: 2%;
+    gap: 2%;
+}
+.botoes_ind{
+    width: 30%;
+    min-height: 80px;
+    max-height: 160px;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 350%;
+    border-radius: 15px;
+}
+
+.botoes_ind:hover{
+    background-color: var(--cor2);
+    color: var(--cor1);
+}
+
+#resultado{
+    background-color: var(--cor0);
+    margin: 6%;
+    border-radius: 15px;
+    font-size: 350%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 65px;
+}
+
+footer{
+    background-color: var(--cor1);
+    color: var(--cor2);
+    text-align: center;
+    font-size: 150%;
+    padding: 8px;
+    margin-top: 20px;
+}
