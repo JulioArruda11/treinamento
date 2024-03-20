@@ -2,14 +2,22 @@ let num1 = '';
 let num2 = '';
 let tela = document.getElementById('resultado');
 let selectOp = false;
-let operador;
+let operador = '';
 
 function obterOperador(op) {
+    if (num1 !== "" && num2 !== ""){
+        resultado()
+        console.log("teste", total)
+        innerHTML = total
+    } 
+
     operador = op.textContent;
     console.log(`Operador selecionado: ${operador}`);
     selectOp = true
-    tela.innerHTML = operador
 }
+
+
+
 function conc(click) {
     if (!selectOp){
         num1 += click.textContent;
@@ -83,3 +91,11 @@ function resultado(){
     }
 }
 
+function reset(){
+    
+    num1 = '';
+    num2 = '';
+    selectOp = false;
+    operador = '';
+    
+}
