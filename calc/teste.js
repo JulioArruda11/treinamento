@@ -97,5 +97,5 @@ function reset(){
     num2 = '';
     selectOp = false;
     operador = '';
-    
+    tela.innerHTML = 0
 }
